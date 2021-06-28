@@ -73,7 +73,7 @@ public class Line {
             }
 
 
-        System.out.print("Уникальный букв в слове: " + k);
+        System.out.print("Уникальных букв в слове: " + k);
     }
 
     void Operations (int point){
@@ -84,43 +84,38 @@ public class Line {
             case 1:
                 System.out.println("Введите строку: ");
                 line = in.next();
-                main();
                 break;
 
             case 2:
                 System.out.print("Длина строки: " + this.line.length() + "\n");
-
-                main();
                 break;
+                
             case 3:
                 System.out.print("Введите индекс: " );
                 int index = in.nextInt();
-
                 System.out.print("\nПод индексом " + index + " находится символ: " + this.line.charAt(index) + "\n");
-
-                main();
                 break;
+                
             case 4:
                 System.out.print("Введите индекс: " );
                 index = in.nextInt();
-
                 System.out.print("\nВведите символ: " );
                 char simvol = in.next().charAt(0);
-
                 this.line.replace(this.line.charAt(index), simvol);
-
-                main();
                 break;
+                
             case 5:
                 System.out.println("Потом добавлю метод :)");
+                
             case 6:
                 Palindrom(line);
-
-                main();
                 break;
+                
             case 7:
                 Unique(line);
-                main();
+                
+            main();
+              
         }
     }
 }
